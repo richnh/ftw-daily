@@ -76,6 +76,7 @@ class GeocoderMapbox {
     if (!libLoaded) {
       throw new Error('Mapbox libraries are required for GeocoderMapbox');
     }
+
     if (!this._client) {
       this._client = window.mapboxSdk({
         accessToken: window.mapboxgl.accessToken,
